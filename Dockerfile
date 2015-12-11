@@ -5,6 +5,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 RUN pip install werobot
+RUN pip install cherrypy
 
 COPY code.py /app/code.py
 RUN chmod +x /app/code.py
