@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import werobot
 
 robot = werobot.WeRoBot(token='testrobot', enable_session=True)
