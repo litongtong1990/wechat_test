@@ -9,6 +9,6 @@ RUN pip install werobot
 COPY code.py /app/code.py
 RUN chmod +x /app/code.py
 
-EXPOSE 8080
+EXPOSE 8888
 
 CMD ["python","/app/code.py"]
