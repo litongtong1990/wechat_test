@@ -1,13 +1,9 @@
-import web
+import werobot
 
-urls = (
-    '/', 'index'
-)
+robot = werobot.WeRoBot(token='tokenhere')
 
-class index:
-    def GET(self):
-        return "Hello, world!"
+@robot.text
+def hello_world():
+    return 'Hello World!'
 
-if __name__ == "__main__":
-    app = web.application(urls, globals())
-    app.run()
+robot.run()
