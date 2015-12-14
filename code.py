@@ -10,6 +10,6 @@ def subscribe(message):
 @robot.handler
 def echo(message):
     #return '我是WeRoBot机器人xxxxx'
-    return message.content
+    return "this is a test "+message.content
 
 robot.run(server='cherrypy',host='0.0.0.0',port=80)
